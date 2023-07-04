@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+body,
+html {
+  height: 100%;
+  color: #fff;
+  background-color: #020c21;
+}
+#root {
+  display: flex;
+  justify-content: center;
+}
+.page {
+  max-width: 1100px;
+  padding: 30px 15px;
+  width: 100%;
+  font-size: 16px;
+}
+.page__posts {
+}
+.page__form {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.page__filter {
+  margin-bottom: 20px;
+}
+.page__title {
+  text-align: center;
+}
+.post {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.post:not(:last-child) {
+  margin-bottom: 15px;
+}
+.post__top {
+  margin-bottom: 5px;
+}
+.post__body {
+}
+
+.button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 15px;
+  transition: all 0.2s ease 0s;
+  color: #ffff;
+}
+.button:hover {
+  color: #07183d;
+  background-color: #fff;
+}
+.button:active {
+  transform: translateY(2px);
+}
+.input {
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: all 0.2s ease 0s;
+  color: #ffff;
+  width: 100%;
+  border-radius: 10px;
+}
+.input:focus {
+  border: 1px solid rgba(205, 205, 205, 0.552);
+  outline: none;
+}
+.input__wrapper {
+  width: 100%;
+}
+.input__wrapper:not(:last-child) {
+  margin-bottom: 5px;
+}
+.select {
+  cursor: pointer;
+  padding: 7px 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 15px;
+  color: #ffff;
+}
